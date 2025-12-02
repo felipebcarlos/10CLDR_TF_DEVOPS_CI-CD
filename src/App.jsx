@@ -6,7 +6,7 @@ function App() {
 
   // ISSO É UMA VULNERABILIDADE (Simulada)
   // Trivy deve alertar sobre "Generic Password" ou segredo exposto
-  const dbPassword = "admin_password_123"; 
+  const dbPassword = "admin_password_123"; // eslint-disable-line no-unused-vars
 
   return (
     <div className="container">
