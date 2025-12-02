@@ -4,7 +4,6 @@ function App() {
   // URL do seu repositório
   const repoUrl = "https://github.com/felipebcarlos/10CLDR_TF_DEVOPS_CI-CD";
 
-function App() {
   // ISSO É UMA VULNERABILIDADE (Simulada)
   // Trivy deve alertar sobre "Generic Password" ou segredo exposto
   const dbPassword = "admin_password_123"; 
