@@ -66,7 +66,7 @@ Para executar este projeto na sua máquina, siga os passos abaixo:
 
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/felipebcarlos/10CLDR_TF_DEVOPS_CI-CD.git](https://github.com/felipebcarlos/10CLDR_TF_DEVOPS_CI-CD.git)
+git clone [https://github.com/felipebcarlos/10CLDR_TF_DEVOPS_CI-CD.git]
 ```
 
 2. Entre na pasta e instale as dependências:
