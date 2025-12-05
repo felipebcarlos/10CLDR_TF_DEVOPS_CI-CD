@@ -16,6 +16,7 @@ Se você é aluno e quer usar este projeto para estudar ou criar sua própria ve
 
 ### 1. Copiar o Repositório (Fork)
 Clique no botão **"Fork"** no canto superior direito desta página para criar uma cópia deste repositório na sua conta do GitHub.
+![Botão Fork](image.png)
 
 ### 2. Configurar o Repositório
 No seu novo repositório copiado:
