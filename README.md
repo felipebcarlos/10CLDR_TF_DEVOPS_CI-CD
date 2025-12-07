@@ -144,32 +144,49 @@ Após o deploy, executa validações rápidas (`curl`) para garantir que o site 
 ### 6. 🕷️ Segurança Dinâmica (DAST)
 Com o site no ar, o **OWASP ZAP** realiza um scan automatizado na URL pública em busca de vulnerabilidades de tempo de execução (como falta de cabeçalhos de segurança, XSS, etc).
 
+### OPCIONAL 🔒 Segurança Estática (SAST)
+No arquivo **"src/App.jsx"**, a linha 9 possui uma vulnerabilidade coloca propsitalmente para que o Trivy alerte sobre a existência de uma senha em texto puro diretamente no código da página.
+A linha 9, assim como as linhas 7 e 8 podem ser removidas caso queria ver o comportamento do job de SAST.
+
 ---
 
 ## 💻 Como rodar localmente
 
-Para executar este projeto na sua máquina, siga os passos abaixo:
+Para executar localmente, você precisará ter instalado em seu computador o **[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)** e o **[Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)**
 
-1. Clone o repositório:
+<details>
+<summary>Clique aqui para ver o passo a passo detalhado</summary>
+Na sua máquina, siga os passos abaixo:
+
+1. Clone o repositório e faça login com sua conta do Github.
 ```bash
 git clone https://github.com/felipebcarlos/10CLDR_TF_DEVOPS_CI-CD.git
 ```
 
-2. Entre na pasta e instale as dependências:
+![Clonando repositório](imgsreadme/image-13.png)
+
+2. Autorize o Git em seu Github.
+
+![Autorizar Git](imgsreadme/image-14.png)
+
+3. Entre na pasta e instale as dependências:
 ```bash
 cd 10CLDR_TF_DEVOPS_CI-CD
 npm install
 ```
 
-3. Execute o servidor de desenvolvimento:
+![npm install](imgsreadme/image-15.png)
+
+4. Execute o servidor de desenvolvimento:
 ```bash
 npm run dev
 ```
 
+![Executando projeto](imgsreadme/image-16.png)
+
 O projeto estará disponível em `http://localhost:5173`.
 
----
+![Acessando local](imgsreadme/image-17.png)
 
-### OPCIONAL 🔒 Segurança Estática (SAST)
-No arquivo **"src/App.jsx"**, a linha 9 possui uma vulnerabilidade coloca propsitalmente para que o Trivy alerte sobre a existência de uma senha em texto puro diretamente no código da página.
-A linha 9, assim como as linhas 7 e 8 podem ser removidas caso queria ver o comportamento do job de SAST.
+</details>
+---
